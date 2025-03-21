@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px 8px 0 0;
+}
+
+canvas {
+    border: 2px solid #444;
+    background-color: #1a1a1a;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hearts {
+    font-size: 24px;
+}
+
+.wave-indicator, .score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mines-counter {
+    text-align: center;
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Wave notification styling */
+.wave-notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 100;
+}
+
+/* Game over styling */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 100;
+}
+
+.game-over h2 {
+    color: #ff4444;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    margin-top: 15px;
+} 
